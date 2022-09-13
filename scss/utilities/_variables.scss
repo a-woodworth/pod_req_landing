@@ -1,0 +1,49 @@
+// ___________________________________________________________________
+// Global Config
+// ___________________________________________________________________
+
+@use '../utilities/mixins' as *;
+
+//Font Stack
+$font-family--primary: 'Chivo', sans-serif;
+
+// Font Weights
+$font-weight--regular: 400;
+
+// Primary Colors
+$dark-blue-black: #{'hsl(224, 35%, 11%)'};
+$dark-gray: #{'hsl(225, 26%, 23%)'};
+$green: #{'hsl(157, 74%, 62%)'};
+$light-blue: #{'hsl(225, 40%, 83%)'};
+$medium-gray: #{'hsl(225, 21%, 45%)'};
+$mint-green: #{'hsl(157, 100%, 85%)'};
+$red: #{'hsl(0, 96%, 61%)'};
+$white: #{'hsl(0, 0%, 100%)'};
+
+// Color Usage
+$bg-color-primary: $dark-blue-black;
+$bg-color-input: $dark-gray;
+$text-color-primary: $light-blue;
+$text-color-secondary: $white;
+$text-color-tertiary: $dark-blue-black;
+$hover-color: $mint-green;
+$accent-color: $green;
+$error-color: $red;
+
+// Text
+$text-XL: pxToRem(52px);
+$text-L: pxToRem(48px);
+$text-M: pxToRem(27px);
+$text-S: pxToRem(18px);
+$text-XS: pxToRem(15px);
+$text-XXS: pxToRem(14px);
+
+// Line Height
+$line-height__text-XL: 1.19;
+$line-height__text-L: 1.16;
+$line-height__text-M: 1.4;
+$line-height__text-S: 1.5;
+$line-height__text-XS: 1.6;
+$line-height__text-XXS: 2;
+
+// Breakpoints
