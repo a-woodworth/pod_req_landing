@@ -1,0 +1,15 @@
+// ___________________________________________________________________
+// Header Styles
+// ___________________________________________________________________
+
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4.25rem;
+  padding-top: 3.875rem;
+}

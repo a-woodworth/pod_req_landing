@@ -4,3 +4,45 @@
 
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+
+.hero__header {
+  margin-bottom: 2.125rem;
+}
+
+.podcasts__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.podcasts__brands {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  width: 100%;
+
+  img {
+    height: 1.0625rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.podcasts__brand-list img:nth-child(1) {
+  width: 3.5rem;
+}
+
+.podcasts__brand-list img:nth-child(2) {
+  width: 2.8125rem;
+}
+
+.podcasts__brand-list img:nth-child(3) {
+  height: 0.6875rem;
+  width: 4.5625rem;
+}
+
+.podcasts__brand-list img:nth-child(4) {
+  height: 0.9375rem;
+  width: 4.5625rem;
+}

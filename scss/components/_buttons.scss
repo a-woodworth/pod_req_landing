@@ -4,3 +4,26 @@
   
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+
+.btn {
+  @include rounded(1.75rem);
+  @include text($text-XXS, $font-weight--bold, $text-color-tertiary);
+  background-color: $accent-color;
+  border: none;
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+  cursor: pointer;
+  line-height:  $line-height__text-XXS;
+  margin-top: 0.5rem;
+  padding: 9px 0;
+  width: 100%;
+
+  &:hover {
+    background-color: $hover-color;
+    transition: 0.25s ease-in;
+  }
+
+  &:focus {
+    outline: auto 2px Highlight; // for non-webkit browsers
+    outline: auto 5px -webkit-focus-ring-color; // for webkit browsers
+  }
+}

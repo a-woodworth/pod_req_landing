@@ -9,4 +9,13 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+  padding-inline: 1.5rem;
+}
+
+.bg-container {
+  background-image: linear-gradient($bg-color-secondary, $bg-color-secondary), 
+    url(assets/mobile/image-host.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }

@@ -6,7 +6,7 @@
     <!-- Google Fonts Links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chivo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link href="styles.css" rel="stylesheet">
     
@@ -14,9 +14,9 @@
   </head>
 
   <body>
-    <div class="bg-image">
-      <header>
-        <div class="main-header container">
+    <div class="bg-container">
+      <header class="container">
+        <div class="main-header">
           <a href="./index.html" aria-label="Pod home page">
             <img src="assets/desktop/logo.svg" alt="Pod logo. Click for home page.">
           </a>
@@ -24,13 +24,15 @@
       </header>
       <main class="container" aria-labelledby="#hero-title">
         <div class="hero__header">
-          <h1 id="#hero-title" class="hero__heading">Publish your podcasts everywhere.</h1>
+          <h1 id="#hero-title" class="hero__heading">
+            <span class="accent-color">Publish your podcasts</span> everywhere.
+          </h1>
           <p class="hero__subheading">
             Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!
           </p>
         </div>
         <div class="podcasts__container">
-          <div class="podcasts__brand-list">
+          <div class="podcasts__brands">
             <img src="assets/desktop/spotify.svg" alt="" aria-hidden="true">
             <img src="assets/desktop/apple-podcast.svg" alt="" aria-hidden="true">
             <img src="assets/desktop/google-podcasts.svg" alt="" aria-hidden="true">
@@ -46,8 +48,8 @@
                 name="email"
                 placeholder="Email address"
                 required>
-              <p class="form__error-message not-visible" aria-live="polite" hidden>
-                Oop! Please check your email
+              <p class="form__error-message not-visible" aria-live="polite">
+                Oops! Please check your email
               </p>
               <button type="submit" class="btn">Request Access</button>
             </div>
@@ -55,5 +57,10 @@
         </div>
       </main>
     </div>
+    <footer>
+      <div class="main-footer">
+        <img src="assets/desktop/bg-pattern-dots.svg" alt="" aria-hidden="true">
+      </div>
+    </footer>
   </body>
 </html>

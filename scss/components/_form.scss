@@ -5,11 +5,24 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
-// Screen reader styles  
+form {
+  width: 100%;
+}
+
+.input-group {
+  padding-bottom: 5.875rem;
+}
+ 
 .not-visible {
+  height: 0;
   visibility: hidden;
 }
 
+.visibile {
+  visibility: visible;
+}
+
+// Screen reader styles 
 .sr-only {
   clip-path: inset(100%);
   clip: rect(1px, 1px, 1px, 1px);
@@ -17,4 +30,28 @@
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
+}
+
+input[type="email"] {
+  @include rounded(1.75rem);
+  @include text($text-XXS, $font-weight--bold, $text-color-secondary);
+  background-color: $bg-color-input;
+  border: 1px solid transparent;
+  line-height:  $line-height__text-XXS;
+  margin-bottom: 0.5rem;
+  padding: 9px 0 9px 32px;
+  width: 100%;
+}
+
+input::placeholder {
+  margin-left: 32px;
+  opacity: 0.5;
+}
+
+.form__error-message {
+  @include text($text-error, $font-weight--bold, $error-color);
+  line-height: $line-height__text-L;
+  margin-left: 1.5rem;
+  // padding-top: 0.5rem;
+  text-align: left;
 }
