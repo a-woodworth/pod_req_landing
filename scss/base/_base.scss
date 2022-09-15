@@ -29,7 +29,7 @@ body {
 }
 
 h1 {
-  @include text($text-M, $font-weight--regular, $text-color-secondary);
+  @include text($text-M, $font-weight--light, $text-color-secondary);
   line-height: $line-height__text-M;
   margin-bottom: 1rem;
   text-align: center;
@@ -41,7 +41,7 @@ h1 {
 }
 
 p {
-  @include text($text-XS, $font-weight--regular, $text-color-primary);
+  @include text($text-XS, $font-weight--light, $text-color-primary);
   line-height: $line-height__text-XS;
   text-align: center;
 }

@@ -52,6 +52,5 @@ input::placeholder {
   @include text($text-error, $font-weight--bold, $error-color);
   line-height: $line-height__text-L;
   margin-left: 1.5rem;
-  // padding-top: 0.5rem;
   text-align: left;
 }

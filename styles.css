@@ -59,7 +59,7 @@ img {
 .btn {
   border-radius: 1.75rem;
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: 700;
   color: hsl(224, 35%, 11%);
   background-color: hsl(157, 74%, 62%);
   border: none;
@@ -108,7 +108,7 @@ form {
 input[type=email] {
   border-radius: 1.75rem;
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: 700;
   color: hsl(0, 0%, 100%);
   background-color: hsl(225, 26%, 23%);
   border: 1px solid transparent;
@@ -125,7 +125,7 @@ input::placeholder {
 
 .form__error-message {
   font-size: 0.75rem;
-  font-weight: 400;
+  font-weight: 700;
   color: hsl(0, 96%, 61%);
   line-height: 1.16;
   margin-left: 1.5rem;
@@ -170,7 +170,7 @@ input::placeholder {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   width: 100%;
 }
 .podcasts__brands img {
