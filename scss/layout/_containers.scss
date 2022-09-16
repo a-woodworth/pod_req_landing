@@ -10,6 +10,10 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   padding-inline: 1.5rem;
+
+  @media #{$brkpoint-md} {
+    padding: 0 5.875rem 0 2.4375rem;
+  }
 }
 
 .bg-container {
@@ -18,4 +22,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+
+  @media #{$brkpoint-md} {
+    background-image: url(assets/tablet/image-host.jpg);
+    background-size: 30.6875rem 47.9375rem;
+    background-position: top right;
+    min-height: auto;
+  }
+}
+
+.hero-container {
+  @media #{$brkpoint-md} {
+    background-color: $bg-color-primary;
+  }
 }

@@ -38,6 +38,13 @@ h1 {
   .accent-color {
     color: $accent-color;
   }
+
+  @media #{$brkpoint-md} {
+    font-size: $text-L;
+    line-height: $line-height__text-L;
+    padding-top: 5.8125rem;
+    text-align: left;
+  }
 }
 
 p {

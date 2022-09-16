@@ -12,4 +12,10 @@
   align-items: center;
   margin-bottom: 4.25rem;
   padding-top: 3.875rem;
+
+  @media #{$brkpoint-md} {
+    align-items: flex-start;
+    margin-bottom: 9.5rem;
+    padding-top: 3.125rem;
+  }
 }

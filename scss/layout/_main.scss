@@ -7,6 +7,13 @@
 
 .hero__header {
   margin-bottom: 2.125rem;
+
+  .hero__subheading {
+    @media #{$brkpoint-md} {
+      max-width: 40ch;
+    text-align: left;
+    }
+  }
 }
 
 .podcasts__container {
@@ -14,6 +21,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media #{$brkpoint-md} {
+    flex-direction: column-reverse;
+  }
 }
 
 .podcasts__brands {
@@ -26,6 +37,11 @@
   img {
     height: 1.0625rem;
     margin-bottom: 0.5rem;
+  }
+
+  @media #{$brkpoint-md} {
+    justify-content: flex-start;
+    gap: 2.5rem;
   }
 }
 

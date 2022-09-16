@@ -7,4 +7,9 @@
 
 .main-footer {
   display: none;
+
+  @media #{$brkpoint-md} {
+    display: block;
+    margin-left: 30px;
+  }
 }

@@ -33,6 +33,14 @@ h1 {
 h1 .accent-color {
   color: hsl(157, 74%, 62%);
 }
+@media (min-width: 48rem) {
+  h1 {
+    font-size: 3rem;
+    line-height: 1.16;
+    padding-top: 5.8125rem;
+    text-align: left;
+  }
+}
 
 p {
   font-size: 0.9375rem;
@@ -86,6 +94,11 @@ form {
 .input-group {
   padding-bottom: 5.875rem;
 }
+@media (min-width: 48rem) {
+  .input-group {
+    width: 36ch;
+  }
+}
 
 .not-visible {
   height: 0;
@@ -138,12 +151,31 @@ input::placeholder {
   grid-template-rows: auto;
   padding-inline: 1.5rem;
 }
+@media (min-width: 48rem) {
+  .container {
+    padding: 0 5.875rem 0 2.4375rem;
+  }
+}
 
 .bg-container {
   background-image: linear-gradient(hsla(224, 35%, 11%, 0.9), hsla(224, 35%, 11%, 0.9)), url(assets/mobile/image-host.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+}
+@media (min-width: 48rem) {
+  .bg-container {
+    background-image: url(assets/tablet/image-host.jpg);
+    background-size: 30.6875rem 47.9375rem;
+    background-position: top right;
+    min-height: auto;
+  }
+}
+
+@media (min-width: 48rem) {
+  .hero-container {
+    background-color: hsl(224, 35%, 11%);
+  }
 }
 
 .main-header {
@@ -154,9 +186,22 @@ input::placeholder {
   margin-bottom: 4.25rem;
   padding-top: 3.875rem;
 }
+@media (min-width: 48rem) {
+  .main-header {
+    align-items: flex-start;
+    margin-bottom: 9.5rem;
+    padding-top: 3.125rem;
+  }
+}
 
 .hero__header {
   margin-bottom: 2.125rem;
+}
+@media (min-width: 48rem) {
+  .hero__header .hero__subheading {
+    max-width: 40ch;
+    text-align: left;
+  }
 }
 
 .podcasts__container {
@@ -164,6 +209,11 @@ input::placeholder {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 48rem) {
+  .podcasts__container {
+    flex-direction: column-reverse;
+  }
 }
 
 .podcasts__brands {
@@ -176,6 +226,12 @@ input::placeholder {
 .podcasts__brands img {
   height: 1.0625rem;
   margin-bottom: 0.5rem;
+}
+@media (min-width: 48rem) {
+  .podcasts__brands {
+    justify-content: flex-start;
+    gap: 2.5rem;
+  }
 }
 
 .podcasts__brand-list img:nth-child(1) {
@@ -198,6 +254,12 @@ input::placeholder {
 
 .main-footer {
   display: none;
+}
+@media (min-width: 48rem) {
+  .main-footer {
+    display: block;
+    margin-left: 30px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -11,6 +11,10 @@ form {
 
 .input-group {
   padding-bottom: 5.875rem;
+
+  @media #{$brkpoint-md} {
+    width: 36ch;
+  }
 }
  
 .not-visible {
