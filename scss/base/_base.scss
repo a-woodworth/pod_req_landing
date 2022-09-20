@@ -43,8 +43,15 @@ h1 {
   @media #{$brkpoint-md} {
     font-size: $text-L;
     line-height: $line-height__text-L;
+    margin-bottom: 2rem;
     padding-top: 5.8125rem;
     text-align: left;
+  }
+
+  @media #{$brkpoint-lg} {
+    font-size: $text-XL;
+    line-height: $line-height__text-XL;
+    margin-bottom: 1.5rem;
   }
 }
 

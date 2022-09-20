@@ -10,7 +10,7 @@ form {
   padding-bottom: 5.875rem;
 
   @media #{$brkpoint-md} {
-    // Padding needed after adding in input field margin bottom and error message height
+    // Padding needed after adding input field margin bottom and error message height
     padding-bottom: 2.6075rem;
   }
 }
@@ -55,7 +55,8 @@ input[type="email"] {
   width: 100%;
 
   @media #{$brkpoint-md} {
-    min-height: 3.5rem;
+    height: 3.5rem;
+    padding-left: 32px;
   }
 }
 

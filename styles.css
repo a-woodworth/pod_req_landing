@@ -38,8 +38,16 @@ h1 .accent-color {
   h1 {
     font-size: 3rem;
     line-height: 1.16;
+    margin-bottom: 2rem;
     padding-top: 5.8125rem;
     text-align: left;
+  }
+}
+@media (min-width: 79.6875rem) {
+  h1 {
+    font-size: 3.25rem;
+    line-height: 1.19;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -96,9 +104,9 @@ img {
 }
 @media (min-width: 48rem) {
   .btn {
-    margin: 5px 5px 5px -167px;
-    max-height: 46px;
-    max-width: 162px;
+    margin: 5px 5px 5px -10.4375rem;
+    height: 46px;
+    max-width: 10.125rem;
   }
 }
 
@@ -155,7 +163,8 @@ input[type=email] {
 }
 @media (min-width: 48rem) {
   input[type=email] {
-    min-height: 3.5rem;
+    height: 3.5rem;
+    padding-left: 32px;
   }
 }
 
@@ -206,7 +215,7 @@ input::placeholder {
     min-height: auto;
   }
 }
-@media (min-width: 48rem) {
+@media (min-width: 79.6875rem) {
   .bg-container {
     background-image: url(assets/desktop/image-host.jpg);
     background-size: 55.5rem 40rem;
@@ -298,6 +307,11 @@ input::placeholder {
     margin-bottom: 9.5rem;
   }
 }
+@media (min-width: 79.6875rem) {
+  .podcasts__brands {
+    margin-bottom: 4.375rem;
+  }
+}
 
 .podcasts__brands > img:nth-child(1) {
   height: 1.0625rem;
@@ -343,13 +357,26 @@ input::placeholder {
   }
 }
 
-.main-footer {
+@media (min-width: 79.6875rem) {
+  footer {
+    padding-bottom: 4.875rem;
+  }
+}
+footer .main-footer {
   display: none;
 }
 @media (min-width: 48rem) {
-  .main-footer {
+  footer .main-footer {
     display: block;
     margin-left: 30px;
+  }
+}
+@media (min-width: 79.6875rem) {
+  footer .main-footer {
+    display: flex;
+    justify-content: flex-end;
+    height: 6.5rem;
+    margin-top: -8.125rem;
   }
 }
 
