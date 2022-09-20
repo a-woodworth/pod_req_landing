@@ -25,6 +25,7 @@ p {
 body {
   background-color: $bg-color-primary;
   font-family: $font-family--primary;
+  max-width: 90rem;
   min-height: 100vh;
 }
 

@@ -14,6 +14,12 @@
   @media #{$brkpoint-md} {
     padding: 0 5.875rem 0 2.4375rem;
   }
+
+  @media #{$brkpoint-lg} {
+    max-width: 79.6875rem;
+    margin-inline: auto 0;
+    padding: 0;
+  }
 }
 
 .bg-container {
@@ -29,11 +35,21 @@
     background-position: top right;
     min-height: auto;
   }
+
+  @media #{$brkpoint-md} {
+    background-image: url(assets/desktop/image-host.jpg);
+    background-size: 55.5rem 40rem;
+    background-position: top 8.125rem right;
+  }
 }
 
 .hero-container {
   @media #{$brkpoint-md} {
     background-color: $bg-color-primary;
+  }
+
+  @media #{$brkpoint-lg} {
+    max-width: 45.1875rem;
   }
 }
 
