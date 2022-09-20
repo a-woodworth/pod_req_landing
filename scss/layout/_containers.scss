@@ -36,3 +36,20 @@
     background-color: $bg-color-primary;
   }
 }
+
+.podcasts__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media #{$brkpoint-md} {
+    flex-direction: column-reverse;
+  }
+}
+
+.form__container {
+  @media #{$brkpoint-md} {
+    display: inline-flex;
+  }
+}

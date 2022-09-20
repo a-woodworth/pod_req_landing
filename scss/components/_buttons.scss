@@ -26,4 +26,10 @@
     outline: auto 2px Highlight; // for non-webkit browsers
     outline: auto 5px -webkit-focus-ring-color; // for webkit browsers
   }
+
+  @media #{$brkpoint-md} {
+    margin: 5px 5px 5px -167px;
+    max-height: 46px;
+    max-width: 162px;
+  }
 }

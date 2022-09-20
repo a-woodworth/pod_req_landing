@@ -7,19 +7,26 @@
 
 form {
   width: 100%;
-}
-
-.input-group {
   padding-bottom: 5.875rem;
 
   @media #{$brkpoint-md} {
-    width: 36ch;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.input-group {
+  @media #{$brkpoint-md} {
+    min-width: 26.6875rem;
   }
 }
  
 .not-visible {
   height: 0;
   visibility: hidden;
+
+  @media #{$brkpoint-md} {
+    height: 1rem;
+  }
 }
 
 .visibile {
@@ -45,6 +52,10 @@ input[type="email"] {
   margin-bottom: 0.5rem;
   padding: 9px 0 9px 32px;
   width: 100%;
+
+  @media #{$brkpoint-md} {
+    min-height: 3.5rem;
+  }
 }
 
 input::placeholder {

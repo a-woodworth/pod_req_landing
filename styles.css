@@ -49,6 +49,13 @@ p {
   line-height: 1.6;
   text-align: center;
 }
+@media (min-width: 48rem) {
+  p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+}
 
 a {
   cursor: pointer;
@@ -86,23 +93,38 @@ img {
   outline: auto 2px Highlight;
   outline: auto 5px -webkit-focus-ring-color;
 }
+@media (min-width: 48rem) {
+  .btn {
+    margin: 5px 5px 5px -167px;
+    max-height: 46px;
+    max-width: 162px;
+  }
+}
 
 form {
   width: 100%;
-}
-
-.input-group {
   padding-bottom: 5.875rem;
 }
 @media (min-width: 48rem) {
+  form {
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 48rem) {
   .input-group {
-    width: 36ch;
+    min-width: 26.6875rem;
   }
 }
 
 .not-visible {
   height: 0;
   visibility: hidden;
+}
+@media (min-width: 48rem) {
+  .not-visible {
+    height: 1rem;
+  }
 }
 
 .visibile {
@@ -129,6 +151,11 @@ input[type=email] {
   margin-bottom: 0.5rem;
   padding: 9px 0 9px 32px;
   width: 100%;
+}
+@media (min-width: 48rem) {
+  input[type=email] {
+    min-height: 3.5rem;
+  }
 }
 
 input::placeholder {
@@ -178,6 +205,24 @@ input::placeholder {
   }
 }
 
+.podcasts__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 48rem) {
+  .podcasts__container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 48rem) {
+  .form__container {
+    display: inline-flex;
+  }
+}
+
 .main-header {
   display: flex;
   flex-direction: column;
@@ -203,16 +248,9 @@ input::placeholder {
     text-align: left;
   }
 }
-
-.podcasts__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 @media (min-width: 48rem) {
-  .podcasts__container {
-    flex-direction: column-reverse;
+  .hero__header {
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -220,36 +258,63 @@ input::placeholder {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 2.5rem;
   width: 100%;
 }
 .podcasts__brands img {
-  height: 1.0625rem;
   margin-bottom: 0.5rem;
 }
 @media (min-width: 48rem) {
   .podcasts__brands {
     justify-content: flex-start;
     gap: 2.5rem;
+    margin-bottom: 9.5rem;
   }
 }
 
-.podcasts__brand-list img:nth-child(1) {
+.podcasts__brands > img:nth-child(1) {
+  height: 1.0625rem;
   width: 3.5rem;
 }
-
-.podcasts__brand-list img:nth-child(2) {
-  width: 2.8125rem;
+@media (min-width: 48rem) {
+  .podcasts__brands > img:nth-child(1) {
+    height: 1.8125rem;
+    width: 6rem;
+  }
 }
 
-.podcasts__brand-list img:nth-child(3) {
+.podcasts__brands > img:nth-child(2) {
+  height: 1.0625rem;
+  width: 2.8125rem;
+}
+@media (min-width: 48rem) {
+  .podcasts__brands > img:nth-child(2) {
+    height: 1.8125rem;
+    width: 4.875rem;
+  }
+}
+
+.podcasts__brands > img:nth-child(3) {
   height: 0.6875rem;
   width: 4.5625rem;
 }
+@media (min-width: 48rem) {
+  .podcasts__brands > img:nth-child(3) {
+    height: 1.125rem;
+    width: 7.8125rem;
+  }
+}
 
-.podcasts__brand-list img:nth-child(4) {
+.podcasts__brands img:nth-child(4) {
   height: 0.9375rem;
   width: 4.5625rem;
+}
+@media (min-width: 48rem) {
+  .podcasts__brands img:nth-child(4) {
+    height: 1.625rem;
+    width: 8.0625rem;
+  }
 }
 
 .main-footer {

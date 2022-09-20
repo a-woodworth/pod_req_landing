@@ -51,6 +51,12 @@ p {
   @include text($text-XS, $font-weight--light, $text-color-primary);
   line-height: $line-height__text-XS;
   text-align: center;
+
+  @media #{$brkpoint-md} {
+    font-size: $text-S;
+    line-height: $line-height__text-S;
+    text-align: left;
+  }
 }
 
 a {
