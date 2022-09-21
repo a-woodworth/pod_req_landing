@@ -5,7 +5,7 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
-.btn {
+.form__btn {
   @include rounded(1.75rem);
   @include text($text-XXS, $font-weight--bold, $text-color-tertiary);
   background-color: $accent-color;

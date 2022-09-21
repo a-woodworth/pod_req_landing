@@ -81,7 +81,7 @@ img {
   max-width: 100%;
 }
 
-.btn {
+.form__btn {
   border-radius: 1.75rem;
   font-size: 0.875rem;
   font-weight: 700;
@@ -95,16 +95,16 @@ img {
   padding: 9px 0;
   width: 100%;
 }
-.btn:hover {
+.form__btn:hover {
   background-color: hsl(157, 100%, 85%);
   transition: 0.25s ease-in;
 }
-.btn:focus {
+.form__btn:focus {
   outline: auto 2px Highlight;
   outline: auto 5px -webkit-focus-ring-color;
 }
 @media (min-width: 48rem) {
-  .btn {
+  .form__btn {
     margin: 5px 5px 5px -10.4375rem;
     height: 46px;
     max-width: 10.125rem;
