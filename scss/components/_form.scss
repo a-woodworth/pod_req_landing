@@ -61,6 +61,7 @@ input[type="email"] {
 }
 
 input::placeholder {
+  color: $text-color-secondary;
   margin-left: 32px;
   opacity: 0.5;
 }

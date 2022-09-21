@@ -18,6 +18,7 @@ p {
 body {
   background-color: hsl(224, 35%, 11%);
   font-family: "Chivo", sans-serif;
+  margin: auto;
   max-width: 90rem;
   min-height: 100vh;
 }
@@ -169,6 +170,7 @@ input[type=email] {
 }
 
 input::placeholder {
+  color: hsl(0, 0%, 100%);
   margin-left: 32px;
   opacity: 0.5;
 }
